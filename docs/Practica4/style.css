@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+body{
+    background-color: black;
+    text-align: justify;
+    color: whitesmoke;
+    font-family: "SUSE", sans-serif;
+}
+
+.texto-navbar{
+    color: white;
+    font-family: "SUSE", sans-serif;
+}
+
+.foto-poster{
+    max-width: 52rem;
+    max-height: auto;
+    border-radius: 2rem;
+    border-color: white;
+    margin: auto;
+    
+}
+
+.foto-tabla {
+    max-width: 16rem;
+    max-height: auto;
+    border-radius: 2rem;
+    border-color: whitesmoke;
+}
+
+.banner-negro{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:5rem;
+    position: relative;
+    height: 60rem;
+    max-width: auto;
+}
+
