@@ -34,10 +34,17 @@ function agregarAlCarrito(productoNombre, cantidad) {
     }
     console.error(`El producto "${productoNombre}" no existe.`);
   }
-
+  
 function calcularTotal() {
+  let carrito1 = carrito.slice(0,1);
+    console.log(carrito1);
+    let carrito2 = carrito.slice(2,4);
+    console.log(carrito2);
+  
+    let resultado = [...carrito1, ...carrito2];
+    console.log(resultado);
     let total = 0;
-    for (let item of carrito) {
+    for (let item of resultado) {
         total += item.precio * item.cantidad;
     }
     return total;
@@ -58,6 +65,23 @@ function procesarCompra() {
       console.log(`Compra completada. Total a pagar: $${total.toFixed(2)}`);
     }, 3000);
   }
+
+  function confirmarcompra(){
+    setTimeout(function(){
+      console.log(`Confirmando compra en 3`)
+    }, 500);
+    setTimeout(function(){
+      console.log(`2`)
+    }, 1500);
+    setTimeout(function(){
+      console.log(`1`)
+    }, 2500);
+    setTimeout(function(){
+      console.log(`Compra Confirmada`)
+    }, 2800);
+  }
+
+
   
 agregarAlCarrito("Pantalon", 3);
 agregarAlCarrito("Pantalon", 2);
@@ -71,5 +95,7 @@ console.log(carrito);
 /*let total = calcularTotal();
 total = aplicarDescuento(total);
 console.log(total); */
+
 procesarCompra();
+confirmarcompra();
 
