@@ -96,6 +96,7 @@ console.log(carrito);
 total = aplicarDescuento(total);
 console.log(total); */
 
-procesarCompra();
 confirmarcompra();
+procesarCompra();
+
 
