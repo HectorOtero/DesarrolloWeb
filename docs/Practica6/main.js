@@ -34,3 +34,15 @@ $listaCarrito.addEventListener("click", function(e){
         $totalCarrito.innerText = (totalActual - precio).toFixed(2);
     }
 })
+
+$btnCompra.addEventListener("click", function(e){
+    console.log($listaCarrito.children);
+    if($listaCarrito.children.length > 0) {
+        $mensajeCompra.classList.remove("hidden");
+    }
+    else {
+        alert("El carrito esta vacion, no se puede realizar la compra.");
+    }
+
+})
+
