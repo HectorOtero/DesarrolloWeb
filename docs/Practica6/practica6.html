@@ -43,15 +43,15 @@
         Sombrero - $10
       </article>
     </section>
-    <section id="mensaje-compra" class="hidden">
-      <h2>¡Compra realizada con éxito!</h2>
-      <p>Gracias por su compra.</p>
-    </section>
     <section id="carrito" class="carrito">
       <h2>Carrito de Compras</h2>
       <ul id="lista-carrito"></ul>
       <p>Total: $<span id="total-carrito">0</span></p>
       <button id="btn-compra">Comprar</button>
+    </section>
+    <section id="mensaje-compra" class="hidden">
+      <div id="loader" style="display: none;">Cargando...</div>
+      <div id="mensaje" style="display: none;">Compra realizada con éxito</div>
     </section>
     <script src="main.js" type="module"></script>
   </body>
